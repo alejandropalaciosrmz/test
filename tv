@@ -1,0 +1,47 @@
+public class Prueba {
+    
+    boolean hd;
+    int entradas_hdmi;
+    String marca_del_tv;
+    int pulgadas;
+    private boolean apagado;
+    private boolean encendido;
+
+    /**
+     *
+     * @param hd
+     * @param entradas_hdmi
+     * @param marca_del_tv
+     * @param pulgadas
+     */
+    public Prueba(boolean hd, int entradas_hdmi,String marca_del_tv,int pulgadas)
+{
+    this.hd= hd;
+    this.entradas_hdmi = entradas_hdmi;
+    this.marca_del_tv = marca_del_tv;
+    this.pulgadas = pulgadas;
+    
+    
+}
+    public void encendido(){
+        System.out.println("la television prende solo con el control remoto");
+}
+    public void apagado(){
+        System.out.println("la television solo se apaga desconectandola del enchufe");
+    }
+   
+    /**
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Prueba tv=new Prueba(true,3,"samsung",48);
+        tv.apagado();
+        tv.encendido();
+        System.out.println(tv.apagado);
+        System.out.println(tv.encendido);
+        
+    }
+    
+}
